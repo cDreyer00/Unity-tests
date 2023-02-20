@@ -6,7 +6,7 @@ using CDreyer.Generics;
 public class EnemyMovement : MonoBehaviour, IPoolable<EnemyMovement>
 {
     [SerializeField] float baseSpeed;
-    [SerializeField] float accel;
+    [SerializeField] float accel = 2;
     float speed;
 
     PlayerController player => FindObjectOfType<PlayerController>();
